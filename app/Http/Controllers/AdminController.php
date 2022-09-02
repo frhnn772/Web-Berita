@@ -31,13 +31,11 @@ class AdminController extends Controller
             'name'=> 'required',
             'email'=> 'required',
             'password'=> 'required',
-            'status'=> 'required',
         ]);
         $user->update([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'status' => $request->status,
         ]);
         return redirect ('/data_user')->with('success','Akun Berhasil di Ubah');
     }

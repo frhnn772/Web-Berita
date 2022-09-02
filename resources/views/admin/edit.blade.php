@@ -14,7 +14,7 @@
         <input type="text" name="judul_berita" id="" class="form-control" id="exampleFormControlInput1" placeholder="Judul Berita" value="{{$berita->judul_berita}}">
     </div>
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label ckeditor">Isi Berita</label>
+        <label for="exampleFormControlTextarea1" class="form-label ">Isi Berita</label>
         <textarea name="isi_berita" id="exampleFormControlTextarea1" class="form-control ckeditor" rows="3">{{$berita->isi_berita}}</textarea>
     </div>
     <div class="mb-3">

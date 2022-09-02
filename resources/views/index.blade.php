@@ -8,7 +8,7 @@
         <div class="col-md-10 col-lg-8 col-xl-7">
         @foreach($data as $item)
         <div class="post-preview">
-            <a href="berita/{{$item->slug}}">
+            <a href="/daftarBerita">
                 <h2 class="post-title"></h2>
                 <h3 class="post-subtitle">
                     {!!\Illuminate\Support\Str::limit(htmlspecialchars_decode($item->isi_berita),35,"...")!!}

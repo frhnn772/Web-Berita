@@ -8,7 +8,7 @@
                 <p class="text-center">{{ $message }}</p>
             </div>
         @endif
-    <table id="berita" class="table table-sm table-hover mb-0">
+    <table id="berita" class="table table-sm table-hover mb-0 table-dark">
         <thead>
             <tr>
                 <th scope="col">No</th>

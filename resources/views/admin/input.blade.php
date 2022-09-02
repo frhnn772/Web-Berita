@@ -17,7 +17,7 @@
         <textarea name="isi_berita" id="exampleFormControlTextarea1" class="form-control ckeditor" rows="3"></textarea>
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Gambar Berita</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Gambar Berita</label>
         <input type="file" name="gambar_berita" id="inputGroupFile" class="form-control" placeholder="Judul Berita">
     </div>
     <div class="mb-3">

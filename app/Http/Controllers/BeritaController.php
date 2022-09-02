@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
-use Illuminate\Pagination\Paginator;
+use Illuminate\Pagination\Paginator as PaginationPaginator;
 use Illuminate\Validation\Rule;
 
 class BeritaController extends Controller
@@ -90,11 +90,23 @@ class BeritaController extends Controller
     }
     public function daftarBerita(){
         $data = Berita::paginate(4);
-        Paginator::useBootstrap();
+        paginationPaginator::useBootstrap();
         return view('daftar_berita',compact('data'));
     }
     public function isiBerita($slug){
         $berita = Berita::where('slug',$slug)->get();
         return view ('isiBerita',compact ('berita'));
     }
+    public function getListBerita() {
+        $berita = Berita::latest()->get();
+        return response()->json([
+            'listberita'=>$berita
+        ]);
+    }
+    public function getBerita($slug) {
+        $berita = Berita::where('slug', $slug)->get();
+        return response()->json([
+            'berita'=>$berita
+        ]);
+    }   
 }

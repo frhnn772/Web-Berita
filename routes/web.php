@@ -56,3 +56,7 @@ Route::group(['middleware' => ['auth']],function(){
 
     Route::post('logout', 'App\Http\Controllers\AdminController@logout')->name('logout');
 });
+
+// Api public
+Route::get('getListBerita', 'App\Http\Controllers\BeritaController@getListBerita')->name('getListBerita');
+Route::get('getBerita/{slug}', 'App\Http\Controllers\BeritaController@getBerita')->name('getBerita');
