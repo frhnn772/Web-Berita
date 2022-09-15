@@ -22,7 +22,7 @@
     <select name="status" class="form-control">
         <option selected>Pilih Status</option>
         <option value="Admin">Admin</option>
-        <option value="User">Kreator</option>
+        <option value="Kreator">Kreator</option>
     </select>
     <br>
 

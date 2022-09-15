@@ -40,9 +40,10 @@ Route::group(['middleware' => ['auth']],function(){
 
     Route::post('update_berita/{berita}', 'App\Http\Controllers\BeritaController@update')->name('berita.update');
 
+    Route::get('register', 'App\Http\Controllers\AdminController@register')->name('register');
+    Route::post('auth_register', 'App\Http\Controllers\AdminController@auth_register')->name('auth_register');
     Route::get('delete/{berita}', 'App\Http\Controllers\BeritaController@delete')->name('berita.delete');
     
-    Route::get('register', 'App\Http\Controllers\AdminController@register')->name('register');
 
     Route::get('data_user', 'App\Http\Controllers\AdminController@data_user')->name('data_user');
 
@@ -52,7 +53,6 @@ Route::group(['middleware' => ['auth']],function(){
 
     Route::get('hapus_user/{user}', 'App\Http\Controllers\AdminController@hapus_user')->name('user.hapus_user');
 
-    Route::post('auth_register', 'App\Http\Controllers\AdminController@auth_register')->name('auth_register');
 
     Route::post('logout', 'App\Http\Controllers\AdminController@logout')->name('logout');
 });
