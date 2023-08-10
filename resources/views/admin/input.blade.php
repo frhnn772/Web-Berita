@@ -6,7 +6,7 @@
     @csrf
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Kreator</label>
-        <input type="text" name="kreator" class="form-control" id="exampleFormControlInput1" placeholder="Nama Anda">
+        <input type="text" name="kreator" class="form-control" id="exampleFormControlInput1" placeholder="Nama Anda" value="{{ Auth::user()->name }}" >
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Judul Berita</label>

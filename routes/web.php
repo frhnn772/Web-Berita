@@ -42,8 +42,8 @@ Route::group(['middleware' => ['auth']],function(){
 
     Route::get('register', 'App\Http\Controllers\AdminController@register')->name('register');
     Route::post('auth_register', 'App\Http\Controllers\AdminController@auth_register')->name('auth_register');
+
     Route::get('delete/{berita}', 'App\Http\Controllers\BeritaController@delete')->name('berita.delete');
-    
 
     Route::get('data_user', 'App\Http\Controllers\AdminController@data_user')->name('data_user');
 

@@ -27,7 +27,7 @@
                 <td>{{$data -> kreator}}</td>
                 <td><img alt="img" class="rounded-2" src="/{{$data -> gambar_berita}}" width="50px"></td>
                 <td>{{$data -> created_at}}</td>
-                <td><a href="/edit/{{$data->id}}" class="btn btn-sm btn-warning">Edit</a>|<a class="btn btn-sm btn-danger" href="/delete/{{$data->id}}" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Berita Tentang {{$data -> judul_berita}}')">Hapus</a></td>
+                <td class="d-flex align-items-center"><a href="/edit/{{$data->id}}" class="btn btn-sm btn-warning">Edit</a>|<a class="btn btn-sm btn-danger" href="/delete/{{$data->id}}" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Berita Tentang {{$data -> judul_berita}}')">Hapus</a></td>
             </tr>
             @endforeach
         </tbody>

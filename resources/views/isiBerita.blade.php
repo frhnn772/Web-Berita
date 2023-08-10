@@ -7,7 +7,7 @@
         <img src="/{{$beritas -> gambar_berita}}" class="card-img-top" height="500px">
         <div class="card-body">
             <h5 class="card-titlte">{{$beritas -> judul_berita}}</h5>
-            <p class="card-text">{!!\Illuminate\Support\Str::limit(htmlspecialchars_decode($beritas -> isi_berita),100,"...")!!}</p>
+            <p class="card-text">{!!($beritas -> isi_berita)!!}</p>
             <p class="card-text"><small class="text-muted">{{$beritas -> created_at}}</small></p>
         </div>
     </div>
